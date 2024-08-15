@@ -9,8 +9,9 @@ This is to create a docker container allowing to convert an html text to a markd
 docker build -t html-to-md-converter .
 ```
 
-## 3. Run docker
+## 3. Run docker container with a mounted volume
 
 ```sh
-docker run --name html-to-md-converter-container html-to-md-converter
+docker run --name html-to-md-converter-container -v $(pwd):/app html-to-md-converter
 ```
+After running the container, you can find the generated new_file.md in the base folder of the repository.
