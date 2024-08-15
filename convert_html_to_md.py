@@ -10,8 +10,8 @@ def convert_html_to_md(html_file, md_file):
         f.write(md_content)
 
 if __name__ == "__main__":
-    html_file = 'changelog.html'
-    md_file = 'changelog.md'
+    html_file = 'file_to_convert.html'
+    md_file = 'new_file.md'
     
     convert_html_to_md(html_file, md_file)
     print(f"Conversion terminée : {html_file} -> {md_file}")
